@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ /*
+  ~  *
+  ~  *  *
+  ~  *  *  * MegaEconomy-Expansion - An expansion for the MegaEconomy plugin.
+  ~  *  *  * Copyright (C) 2018 Max Berkelmans AKA LemmoTresto
+  ~  *  *  *
+  ~  *  *  * This program is free software: you can redistribute it and/or modify
+  ~  *  *  * it under the terms of the GNU General Public License as published by
+  ~  *  *  * the Free Software Foundation, either version 3 of the License, or
+  ~  *  *  * (at your option) any later version.
+  ~  *  *  *
+  ~  *  *  * This program is distributed in the hope that it will be useful,
+  ~  *  *  * but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~  *  *  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+  ~  *  *  * GNU General Public License for more details.
+  ~  *  *  *
+  ~  *  *  * You should have received a copy of the GNU General Public License
+  ~  *  *  * along with this program. If not, see <http://www.gnu.org/licenses/>.
+  ~  *  *
+  ~  *
+  ~  */
+  -->
+
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>me.max</groupId>
+    <artifactId>MegaEconomyExpansion</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <repositories>
+        <repository>
+            <id>placeholderapi</id>
+            <url>http://repo.extendedclip.com/content/repositories/placeholderapi</url>
+        </repository>
+        <repository>
+            <id>spigotmc-repo</id>
+            <url>https://hub.spigotmc.org/nexus/content/groups/public/</url>
+        </repository>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
+
+    <dependencies>
+        <dependency>
+            <groupId>me.clip</groupId>
+            <artifactId>placeholderapi</artifactId>
+            <version>2.8.3</version>
+        </dependency>
+        <dependency>
+            <groupId>org.bukkit</groupId>
+            <artifactId>bukkit</artifactId>
+            <version>1.12.2-R0.1-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.github.LemmoTresto</groupId>
+            <artifactId>MegaEconomy</artifactId>
+            <version>88841ec955</version>
+        </dependency>
+    </dependencies>
+
+
+</project>
