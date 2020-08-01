@@ -29,7 +29,7 @@ import me.max.megaeconomy.MegaEconomy;
 import me.max.megaeconomy.api.Api;
 import me.max.megaeconomy.economy.Economy;
 import org.bukkit.Bukkit;
-import org.bukkit.entity.Player;
+import org.bukkit.OfflinePlayer;
 import org.bukkit.plugin.Plugin;
 
 public class MegaEconomyExpansion extends PlaceholderExpansion {
@@ -44,7 +44,7 @@ public class MegaEconomyExpansion extends PlaceholderExpansion {
     @Override
     public boolean canRegister() {
         if (api == null) return false;
-        Plugin pl = Bukkit.getPluginManager().getPlugin(getPlugin());
+        Plugin pl = Bukkit.getPluginManager().getPlugin(getRequiredPlugin());
         if (pl == null || !pl.isEnabled()) return false;
         return true;
     }
@@ -69,7 +69,7 @@ public class MegaEconomyExpansion extends PlaceholderExpansion {
      * @return MegaEconomy
      */
     @Override
-    public String getPlugin() {
+    public String getRequiredPlugin() {
         return "MegaEconomy";
     }
 
@@ -86,7 +86,7 @@ public class MegaEconomyExpansion extends PlaceholderExpansion {
      * @return String outcome of the placeholder.
      */
     @Override
-    public String onPlaceholderRequest(Player p, String identifier) {
+    public String onRequest(OfflinePlayer p, String identifier) {
 
         if (api == null) return null;
 
